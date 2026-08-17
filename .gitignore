@@ -6,3 +6,6 @@ Thumbs.db
 node_modules/
 *.log
 .pagespeed/*.tmp
+
+# Редакторский скилл «Фрактальной Одиссеи» — держим локально, не в публичный репозиторий
+fractal-odyssey-editor/

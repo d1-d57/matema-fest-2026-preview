@@ -1,5 +1,7 @@
 # matema-fest-2026 — project notes for Claude
 
+> **Справка по фактам сайта** (структура, деплой, `/weights`, `/pagespeed`, конвенции). Рабочий процесс на новых задачах — арк-дисциплина: вход Claude Code — корневой `../CLAUDE.md`; поведение Cowork — `../COWORK.md`; арки — `../ARKA.md`; история — `../zhurnal/SVODKI.md`.
+
 Single-page festival site, deployed via GitHub Pages from `main`. Pushes go
 live in ~60–90s.
 
@@ -11,6 +13,9 @@ live in ~60–90s.
 ```
 .
 ├── index.html                  # the entire site — HTML + inline <style> + inline <script>
+├── quiz/                       # standalone quiz page «Фракталы в природе» → matema-fest.ru/quiz/
+│   ├── index.html              # self-contained; images via IMG map → img/*.webp (not base64)
+│   └── img/                    # 16 optimised webp (each <500 KB); no attribution on page (intentional)
 ├── assets/                     # PNG / WebP / JPG images referenced from index.html
 ├── scripts/
 │   ├── pagespeed.sh            # PageSpeed Insights v5 → cleaned JSON + summary.md
